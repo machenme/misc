@@ -18,9 +18,7 @@ calculate redmi ax6s/ax3200 ssh password
 打开默认的`192.168.31.1`并且登录,能看到SN码  
 go to `192.168.31.1`(default) and logo in to check SN  
 
-可以把下面代码另存为calc_passwd.py然后运行
-```ubuntu
-python3 calc_passwd.py 12345/A1BC23456
+可以把下面代码另存为calc_passwd.py然后运行`python calc_passwd.py 12345/A1BC23456`(将12345/A1BC23456替换为你的SN码)
 
 ```python
 import sys
