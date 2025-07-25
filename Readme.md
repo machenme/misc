@@ -6,7 +6,10 @@ adb shell pm suspend com.miui.analytics
 adb shell pm suspend com.xiaomi.ab
 adb shell pm suspend com.miui.hybrid
 ```
-
+### 黑域
+```cmd
+adb -d shell 'output=$(pm path me.piebridge.brevent); export CLASSPATH=${output#*:}; app_process /system/bin me.piebridge.brevent.server.BreventServer bootstrap; /system/bin/sh /data/local/tmp/brevent.sh'
+```
 
 ## TEWA-1000E 破解超级管理员密码 
 下载天邑工具.exe后打开,选择大悦me连接后手动输入相关登录命令.每次输入一次按一下回车  
