@@ -1,3 +1,13 @@
+## Xiaomi
+
+```cmd
+adb shell pm suspend com.miui.systemAdSolution
+adb shell pm suspend com.miui.analytics
+adb shell pm suspend com.xiaomi.ab
+adb shell pm suspend com.miui.hybrid
+```
+
+
 ## TEWA-1000E 破解超级管理员密码 
 下载天邑工具.exe后打开,选择大悦me连接后手动输入相关登录命令.每次输入一次按一下回车  
 适用于硬件版本V1.0的  
