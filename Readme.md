@@ -1,4 +1,9 @@
-## Xiaomi
+### Oracle database 11GR2 11.2.0.4.0 兼容Oracle Linux 7.9
+```
+magnet:?xt=urn:btih:4FA33857F956EBCB3FE630753B59DEF49EF76445
+```
+
+### Xiaomi
 
 ```cmd
 adb shell pm suspend com.miui.systemAdSolution
@@ -46,3 +51,4 @@ if __name__ == "__main__":
         serial = input('input your SN eg: 12345/A1BC23456 \n')
         print(calc_passwd(serial))
 ```
+
