@@ -1,3 +1,4 @@
+- [Openclaw wsl显示注入代理启动](#Openclaw wsl显示注入代理启动)
 - [Oracle database 11GR2 11.2.0.4.0 兼容Oracle Linux 7.9](#oracle-database-11gr2-112040-兼容oracle-linux-79)
 - [黑域](#黑域)
 - [TEWA-1000E 破解超级管理员密码](#tewa-1000e-破解超级管理员密码)
@@ -12,7 +13,10 @@
 - [修改conda源](#修改conda源)
 - [修改pip源](#修改pip源)
 
-
+## Openclaw wsl显示注入代理启动
+```bash
+HTTP_PROXY=http://127.0.0.1:7897 HTTPS_PROXY=http://127.0.0.1:7897 NODE_TLS_REJECT_UNAUTHORIZED=0 DEBUG=openclaw:tools:* openclaw gateway run
+```
 
 ## Oracle database 11GR2 11.2.0.4.0 兼容Oracle Linux 7.9
 ```
