@@ -595,9 +595,36 @@ class POETranslatorPanel {
     createToggleButton() {
         this.toggleBtn = document.createElement('button');
         this.toggleBtn.id = 'poe-translator-toggle';
-        this.toggleBtn.innerHTML = '🌐';
-        this.toggleBtn.title = 'POE翻译助手';
+        this.toggleBtn.innerHTML = '<span style="font-size: 28px;">🌐</span>';
+        this.toggleBtn.title = 'POE翻译助手 - 点击打开';
+        this.toggleBtn.style.cssText = `
+            position: fixed !important;
+            top: 150px !important;
+            right: 20px !important;
+            width: 56px !important;
+            height: 56px !important;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            border-radius: 50% !important;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5) !important;
+            cursor: pointer !important;
+            z-index: 2147483647 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border: none !important;
+            transition: all 0.3s !important;
+        `;
         document.body.appendChild(this.toggleBtn);
+
+        // 悬停效果
+        this.toggleBtn.onmouseover = () => {
+            this.toggleBtn.style.transform = 'scale(1.2)';
+            this.toggleBtn.style.boxShadow = '0 8px 30px rgba(102, 126, 234, 0.7)';
+        };
+        this.toggleBtn.onmouseout = () => {
+            this.toggleBtn.style.transform = 'scale(1)';
+            this.toggleBtn.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.5)';
+        };
 
         this.toggleBtn.addEventListener('click', () => {
             this.togglePanel();
