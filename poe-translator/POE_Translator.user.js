@@ -13,8 +13,8 @@
 // @connect      gitee.com
 // @connect      raw.githubusercontent.com
 // @connect      localhost
-// @updateURL    https://gitee.com/你的用户名/poe-translator/raw/master/POE_Translator.user.js
-// @downloadURL  https://gitee.com/你的用户名/poe-translator/raw/master/POE_Translator.user.js
+// @updateURL    https://cdn.jsdelivr.net/gh/machenme/misc@main/poe-translator/POE_Translator.user.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/machenme/misc@main/poe-translator/POE_Translator.user.js
 // ==/UserScript==
 
 /**
@@ -25,8 +25,8 @@
 // 配置区域 - 请根据实际情况修改
 const CONFIG = {
     // 词典和转换表URL - 请修改为你的实际URL
-    DICTIONARY_URL: 'https://gitee.com/你的用户名/poe-translator/raw/master/poe_dictionary.json',
-    SC_TC_CONVERSION_URL: 'https://gitee.com/你的用户名/poe-translator/raw/master/sc_tc_conversion.json',
+    DICTIONARY_URL: 'https://cdn.jsdelivr.net/gh/machenme/misc@main/poe-translator/poe_dictionary.json',
+    SC_TC_CONVERSION_URL: 'https://cdn.jsdelivr.net/gh/machenme/misc@main/poe-translator/sc_tc_conversion.json',
 
     // 默认设置
     DEFAULT_LOCALE: 'zh-rCN',  // zh-rCN: 简体中文, zh-rTW: 繁体中文
